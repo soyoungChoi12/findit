@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d0b8e22b.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>findit</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fa-regular fa-lemon"></i>
+            <a href="#">findit</a>
+        </div>
+        <div class="navbar_search">
+            <input type="text" placeholder="장학금 찾아보기!">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="utility">
+            <div class="sign">
+                <a href="#" class="btn_signin">로그인</a>
+                <hr>
+                <a href="#" class="btn_signup">회원가입</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nabvigation">
+        <ul class="nav1">
+            <button type="button" class="btn_menu" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <li><a href="#">장학금정보</a></li>
+            <li><a href="#">장학금제안</a></li>
+            <li><a href="#">자소서작성</a></li>
+            <li><a href="#">멘토게시판</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="img/ad1.jpg" alt="Ad 1">
+            </div>
+            <div class="slide">
+                <img src="img/ad2.jpg" alt="Ad 2">
+            </div>
+            <div class="slide">
+                <img src="img/ad3.jpg" alt="Ad 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="main">
+        <div class="추천">
+            <a>[추천 장학금]</a>
+        </div>
+        <ul class="item_list">
+            <li>
+                <div class="img">
+                    <img src="img/메인베너.jpg">
+                </div>
+                <div class="info">
+                    <p class="cname">인문100년장학금</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="img/메인베너.jpg">
+                </div>
+                <div class="info">
+                    <p class="cname">인문100년장학금</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="img/메인베너.jpg">
+                </div>
+                <div class="info">
+                    <p class="cname">인문100년장학금</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="img/메인베너.jpg">
+                </div>
+                <div class="info">
+                    <p class="cname">인문100년장학금</p>
+                </div>
+            </li>
+        </ul>
+        <div class="추천">
+            <a>[모집 중인 장학]</a>
+        </div>
+        <div class="bo_table">
+            <table>
+                <colgroup>
+                    <col width="400">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>장학명</th>
+                        <th>기관명</th>
+                        <th>모집현황</th>
+                        <th>조회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="noti">
+                        <td class="td_subject">
+                            <p class="title">
+                                <a>연세굿데이치과 드림스폰 회원 할인혜택</a>
+                            </p>
+                            <div class="hashtag">
+                                <span>#장학금후원사</span>
+                                <span>#연세굿데이치과</span>
+                            </div>
+                        </td>
+                        <td>연세굿데이치과</td>
+                        <td class="td_day">
+                            <span class="count">
+                                <span style="color: #404040;">D-13</span>
+                            </span>
+                            <span class="state bgBlue">모집중</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
