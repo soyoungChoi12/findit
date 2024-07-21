@@ -16,3 +16,17 @@ function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
 }
+
+function showScreen(screenId) {
+    // 모든 화면을 숨기기
+    const screens = document.querySelectorAll('.screen');
+    screens.forEach(screen => {
+        screen.classList.add('hidden');
+        screen.classList.remove('active');
+    });
+
+    // 선택한 화면을 보여주기
+    const activeScreen = document.getElementById(screenId);
+    activeScreen.classList.remove('hidden');
+    activeScreen.classList.add('active');
+}

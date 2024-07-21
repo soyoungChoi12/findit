@@ -1,0 +1,9 @@
+.scholarship_mentor{
+    font-size: 50px;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.scholarship_mentor:hover{
+    color: red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/suggest.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <link rel="stylesheet" href="css/mentor.css" />
+    <link rel="stylesheet" href="css/write.css" />
+    <link rel="stylesheet" href="css/community.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/42d0b8e22b.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>findit</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav class="topnavbar">
+            <div class="navbar_logo">
+                <i class="fa-regular fa-lemon"></i>
+                <a href="#" class="nav-home" onclick="showScreen('screen1')" data-target="home">findit</a>
+            </div>
+            <div class="navbar_search">
+                <input type="text" placeholder="장학금 찾아보기!" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="utility">
+                <div class="sign">
+                    <a href="#" class="btn_signin">로그인</a>
+                    <hr />
+                    <a href="#" class="btn_signup">회원가입</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="nabvigation">
+            <ul class="nav1">
+                <button type="button" class="btn_menu" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <li class="nav-item" onclick="showScreen('screen2')"><a data-target="info">장학금정보</a></li>
+                <li class="nav-item" onclick="showScreen('screen3')"><a data-target="suggest">장학금제안</a></li>
+                <li class="nav-item" onclick="showScreen('screen4')"><a data-target="write">자소서작성</a></li>
+                <li class="nav-item" onclick="showScreen('screen5')"><a data-target="mentor">멘토게시판</a></li>
+                <li class="nav-item" onclick="showScreen('screen6')"><a data-target="community">커뮤니티</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="screen active" id="screen1">
+        <a class="home_screen">홈화면입니다</a>
+    </div>
+    <div id="screen2" class="screen hidden">
+        <a class="scholarship_info">장학금정보 화면입니다</a>
+    </div>
+    <div id="screen3" class="screen hidden">
+        <a class="scholarship_suggest">장학금제안 화면입니다</a>
+    </div>
+    <div id="screen4" class="screen hidden">
+        <a class="scholarship_write">자소서 작성 화면입니다</a>
+    </div>
+    <div id="screen5" class="screen hidden">
+        <a class="scholarship_mentor">멘토게시판 화면입니다</a>
+    </div>
+    <div id="screen6" class="screen hidden">
+        <a class="scholarship_community">커뮤니티 화면입니다</a>
+    </div>
+</body>
+
+</html>

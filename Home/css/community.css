@@ -1,0 +1,9 @@
+.scholarship_community{
+    font-size: 50px;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.scholarship_community:hover{
+    color: red;
+}

@@ -1,0 +1,9 @@
+.scholarship_write{
+    font-size: 50px;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.scholarship_write:hover{
+    color: red;
+}

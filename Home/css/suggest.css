@@ -1,0 +1,9 @@
+.scholarship_suggest{
+    font-size: 50px;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.scholarship_suggest:hover{
+    color: red;
+}
