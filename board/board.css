@@ -1,0 +1,50 @@
+table{
+    margin: auto;
+    width: 700px;
+    border-radius: 5px;
+    border-collapse: collapse; /* 이중 테두리가 아니라 단일테두리 */
+    border-top: none;
+}
+
+.header{
+    background-color: #DCEBFF;
+    text-align: center;
+    border-top: 1px lightgray solid;
+}
+
+.table td, .table th{
+    border-bottom: 1px lightgray solid;
+    height: 30px;
+    font-size: 15px;
+}
+
+.num{
+    width: 50px;
+    font-size: 13px;
+}
+
+.title{
+    width: 500px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.body{
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(196, 218, 253);
+}
+
+button:active{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+
+}
