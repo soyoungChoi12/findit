@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="css/write.css" />
     <link rel="stylesheet" href="css/community.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d0b8e22b.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>findit</title>
 </head>
 
@@ -43,29 +49,176 @@
                 <button type="button" class="btn_menu" aria-haspopup="true" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <li class="nav-item" onclick="showScreen('screen2')"><a data-target="info">장학금정보</a></li>
-                <li class="nav-item" onclick="showScreen('screen3')"><a data-target="suggest">장학금제안</a></li>
-                <li class="nav-item" onclick="showScreen('screen4')"><a data-target="write">자소서작성</a></li>
-                <li class="nav-item" onclick="showScreen('screen5')"><a data-target="mentor">멘토게시판</a></li>
-                <li class="nav-item" onclick="showScreen('screen6')"><a data-target="community">커뮤니티</a></li>
+                <li><a href="#" class="nav-item" onclick="showScreen('screen2')" data-target="info">장학금정보</a></li>
+                <li><a href="#" class="nav-item" onclick="showScreen('screen3')" data-target="suggest">장학금제안</a></li>
+                <li><a href="#" class="nav-item" onclick="showScreen('screen4')" data-target="write">자소서작성</a></li>
+                <li><a href="#" class="nav-item" onclick="showScreen('screen5')" data-target="mentor">멘토게시판</a></li>
+                <li><a href="#" class="nav-item" onclick="showScreen('screen6')" data-target="community">커뮤니티</a></li>
             </ul>
         </div>
     </div>
     <div class="screen active" id="screen1">
-        <a class="home_screen">홈화면입니다</a>
+        <main>
+            <div class="myslider">
+                <div><img src="img/home_ad1.jpg" alt="Today's ad 1"></div>
+                <div><img src="img/home_ad2.jpg" alt="Today's ad 2"></div>
+                <div><img src="img/home_ad3.jpg" alt="Today's ad 3"></div>
+            </div>
+            <div class="recommend">
+                <div class="recommend_group"><a><i class="fa-solid fa-magnifying-glass"></i>장학금 추천</a></div>
+                <div class="mycards">
+                    <div class="card" style="width: 18rem;" onclick="redirectToNewPage()">
+                        <img src="img/ad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">연세굿데이 치과</h5>
+                            <p class="card-text">2024.07.15 ~ 2024.07.31</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" onclick="redirectToNewPage()">
+                        <img src="img/ad2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">연세굿데이 치과</h5>
+                            <p class="card-text">2024.07.15 ~ 2024.07.31</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" onclick="redirectToNewPage()">
+                        <img src="img/ad3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">연세굿데이 치과</h5>
+                            <p class="card-text">2024.07.15 ~ 2024.07.31</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" onclick="redirectToNewPage()">
+                        <img src="img/ad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">연세굿데이 치과</h5>
+                            <p class="card-text">2024.07.15 ~ 2024.07.31</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail_recommend">
+                <div class="detail_recommend_group"><a><i class="fa-regular fa-file"></i>진행 중인 장학</a></div>
+                <div class="scholar_table">
+                    <table>
+                        <colgroup>
+                            <col width="400">
+                            <col width="300">
+                            <col width="200">
+                            <col width="100">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>장학명</th>
+                                <th>기관명</th>
+                                <th>모집현황</th>
+                                <th>조회</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="smalltext">
+                                <td class="td_subject">
+                                    <p class="title">
+                                        <a href="#">홍길동은행 시즌3, 국민들을 위한 긴급 생활비 지원</a>
+                                    </p>
+                                    <div class="hashtag">
+                                        <span>#긴급생활비지원</span>
+                                        <span>#홍길동</span>
+                                        <span>#시민참여</span>
+                                    </div>
+                                </td>
+                                <td class="name">홍길동은행</td>
+                                <td class="td_day">
+                                    <span class="count">
+                                        <span style="color:#404040;">D-7</span>
+                                    </span>
+                                    <span class="state">모집중</span>
+                                </td>
+                                <td class="hit">5147</td>
+                            </tr>
+                            <tr class="smalltext">
+                                <td class="td_subject">
+                                    <p class="title">
+                                        <a href="#">홍길동은행 시즌3, 국민들을 위한 긴급 생활비 지원</a>
+                                    </p>
+                                    <div class="hashtag">
+                                        <span>#긴급생활비지원</span>
+                                        <span>#홍길동</span>
+                                        <span>#시민참여</span>
+                                    </div>
+                                </td>
+                                <td class="name">홍길동은행</td>
+                                <td class="td_day">
+                                    <span class="count">
+                                        <span style="color:#404040;">D-7</span>
+                                    </span>
+                                    <span class="state">모집중</span>
+                                </td>
+                                <td class="hit">5147</td>
+                            </tr>
+                            <tr class="smalltext">
+                                <td class="td_subject">
+                                    <p class="title">
+                                        <a href="#">홍길동은행 시즌3, 국민들을 위한 긴급 생활비 지원</a>
+                                    </p>
+                                    <div class="hashtag">
+                                        <span>#긴급생활비지원</span>
+                                        <span>#홍길동</span>
+                                        <span>#시민참여</span>
+                                    </div>
+                                </td>
+                                <td class="name">홍길동은행</td>
+                                <td class="td_day">
+                                    <span class="count">
+                                        <span style="color:#404040;">D-7</span>
+                                    </span>
+                                    <span class="state">모집중</span>
+                                </td>
+                                <td class="hit">5147</td>
+                            </tr>
+                            <tr class="smalltext">
+                                <td class="td_subject">
+                                    <p class="title">
+                                        <a href="#">홍길동은행 시즌3, 국민들을 위한 긴급 생활비 지원</a>
+                                    </p>
+                                    <div class="hashtag">
+                                        <span>#긴급생활비지원</span>
+                                        <span>#홍길동</span>
+                                        <span>#시민참여</span>
+                                    </div>
+                                </td>
+                                <td class="name">홍길동은행</td>
+                                <td class="td_day">
+                                    <span class="count">
+                                        <span style="color:#404040;">D-7</span>
+                                    </span>
+                                    <span class="state">모집중</span>
+                                </td>
+                                <td class="hit">5147</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
     </div>
+
     <div id="screen2" class="screen hidden">
         <a class="scholarship_info">장학금정보 화면입니다</a>
     </div>
+
     <div id="screen3" class="screen hidden">
         <a class="scholarship_suggest">장학금제안 화면입니다</a>
     </div>
+
     <div id="screen4" class="screen hidden">
         <a class="scholarship_write">자소서 작성 화면입니다</a>
     </div>
+
     <div id="screen5" class="screen hidden">
         <a class="scholarship_mentor">멘토게시판 화면입니다</a>
     </div>
+
     <div id="screen6" class="screen hidden">
         <a class="scholarship_community">커뮤니티 화면입니다</a>
     </div>

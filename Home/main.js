@@ -30,3 +30,18 @@ function showScreen(screenId) {
     activeScreen.classList.remove('hidden');
     activeScreen.classList.add('active');
 }
+
+$('.myslider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500
+});
+
+
+function redirectToNewPage() {
+    window.location.href = 'index_recommend.html'; // 새로운 페이지 URL로 변경
+}

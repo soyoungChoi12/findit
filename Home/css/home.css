@@ -1,16 +1,6 @@
-.home_screen{
-    font-size: 50px;
-    text-decoration: none;
-    color: skyblue;
-}
-
-.home_screen:hover{
-    color: red;
-}
-
-
 .screen {
     display: none;
+    justify-content: center;  /* 가로 중앙 정렬 */
 }
 
 .screen.hidden {
@@ -21,12 +11,12 @@
     display: flex;
 }
 
-body{
+body {
     margin: 0;
-    font-family: 'Noto+Sans+KR' ;
+    font-family: 'Noto+Sans+KR';
 }
 
-.topnavbar{
+.topnavbar {
     display: grid;
     position: relative;
     margin: 0 auto;
@@ -42,7 +32,7 @@ body{
     align-items: center
 }
 
-.navbar_logo{
+.navbar_logo {
     display: block;
     position: relative;
     padding-left: 14px;
@@ -50,14 +40,16 @@ body{
 }
 
 .navbar_logo {
-    font-size: 30px; /* 로고 텍스트의 크기 조정 */
+    font-size: 30px;
+    /* 로고 텍스트의 크기 조정 */
 }
 
 .navbar_logo i {
-    font-size: 30px; /* 아이콘의 크기 조정 */
+    font-size: 30px;
+    /* 아이콘의 크기 조정 */
 }
 
-.nav-home{
+.nav-home {
     text-decoration: none;
     color: #000000;
 }
@@ -80,8 +72,10 @@ body{
     place-items: center start;
     gap: 12px;
 }
+
 .navbar_search input[type="text"] {
-    padding: 5px 40px 5px 10px; /* 오른쪽 패딩을 추가하여 버튼 공간 확보 */
+    padding: 5px 40px 5px 10px;
+    /* 오른쪽 패딩을 추가하여 버튼 공간 확보 */
     font-size: 16px;
     border: 2px solid #ffffff;
     border-radius: 3px;
@@ -95,7 +89,8 @@ body{
 
 .navbar_search button {
     position: absolute;
-    right: 2px; /* 테두리 두께와 일치하도록 조정 */
+    right: 2px;
+    /* 테두리 두께와 일치하도록 조정 */
     top: 50%;
     transform: translateY(-50%);
     padding: 5px 10px;
@@ -110,14 +105,14 @@ body{
     color: #666;
 }
 
-.sign{
+.sign {
     display: grid;
     gap: 16px;
     grid-auto-flow: column dense;
     align-items: center;
 }
 
-.sign hr{
+.sign hr {
     display: block;
     width: 1px;
     height: 12px;
@@ -125,21 +120,21 @@ body{
     background: #d7dce5;
 }
 
-.btn_signin{
+.btn_signin {
     text-decoration: none;
     color: #373f57;
     font-size: 14px;
     line-height: 24px;
 }
 
-.btn_signup{
+.btn_signup {
     text-decoration: none;
     color: #373f57;
     font-size: 14px;
     line-height: 24px;
 }
 
-.btn_menu{
+.btn_menu {
     display: grid;
     position: relative;
     padding-left: 14px;
@@ -147,9 +142,12 @@ body{
     box-sizing: border-box;
     color: black;
     align-items: center;
-    border: none; /* 테두리 제거 */
-    background: none; /* 배경색 제거 */
-    cursor: pointer; /* 커서 모양을 포인터로 변경 */
+    border: none;
+    /* 테두리 제거 */
+    background: none;
+    /* 배경색 제거 */
+    cursor: pointer;
+    /* 커서 모양을 포인터로 변경 */
 }
 
 /* 버튼이 포커스를 받을 때 테두리가 나타나지 않도록 */
@@ -159,136 +157,164 @@ body{
 
 /* 버튼의 크기를 조절하고 싶다면 */
 .btn_menu i {
-    font-size: 24px; /* 아이콘 크기 조절 */
+    font-size: 24px;
+    /* 아이콘 크기 조절 */
 }
 
 .nav1 {
-    list-style-type: none; /* 리스트 스타일 제거 */
+    list-style-type: none;
+    /* 리스트 스타일 제거 */
     margin: 0;
     padding: 0;
-    background-color: #cbe4ff; /* 배경색 설정 */
-    display: flex; /* Flexbox 사용 */
-    justify-content: center; /* 항목을 중앙에 정렬 */
-    align-items: center; /* 세로축 정렬 */
+    background-color: #cbe4ff;
+    /* 배경색 설정 */
+    display: flex;
+    /* Flexbox 사용 */
+    justify-content: center;
+    /* 항목을 중앙에 정렬 */
+    align-items: center;
+    /* 세로축 정렬 */
+    height: 50px;
 }
 
 .nav1 li {
     margin: 0;
-    padding: 0 16px; /* 좌우 패딩 추가 */
+    padding: 0 16px;
+    /* 좌우 패딩 추가 */
 }
 
 .nav1 li a {
     display: block;
-    color: rgb(0, 0, 0); /* 텍스트 색상 */
+    color: rgb(0, 0, 0);
+    /* 텍스트 색상 */
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; /* 밑줄 제거 */
+    padding: 5px;
+    text-decoration: none;
+    /* 밑줄 제거 */
+    line-height: 25px;
+    border-radius: 5px;
 }
 
 .nav1 li a:hover {
-    background-color: #ffffff; /* 마우스를 올렸을 때 배경색 */
+    background-color: #ffffff;
+    /* 마우스를 올렸을 때 배경색 */
 }
 
-.nabvigation{
+.nabvigation {
     margin: 0 auto;
     width: 1000px;
     box-sizing: border-box;
 }
 
-.slider {
-    width: 100%;
-    max-width: 600px; /* 고정된 최대 너비 */
-    height: 300px; /* 고정된 높이 */
+
+.myslider {
     margin: 0 auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    position: relative;
+    width: 1000px;
+    box-sizing: border-box;
+    height: 500px;
 }
 
-.slides {
-    display: flex;
-    width: 300%;
-    height: 100%; /* 슬라이더 높이에 맞추기 */
-    animation: slide 15s infinite;
+.myslider div {
+    height: 350px;
 }
 
-.slide {
-    width: 100%;
-    height: 100%; /* 슬라이더 높이에 맞추기 */
-    flex-shrink: 0;
+.myslider .slick-arrow {
+    display: none !important;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%; /* 슬라이드 크기에 맞추기 */
-    object-fit: cover; /* 이미지 비율 유지 및 크기에 맞추기 */
+.myslider img {
+    width: 1000px
 }
 
-@keyframes slide {
-    0% { transform: translateX(0%); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
+.slick-dotted.slick-slider {
+    height: 330px;
 }
 
-.main{
-    display: grid;
-    margin: 0 auto;
-    padding-top: 12px;
+.recommend{
     width: 1000px;
 }
 
-.main a{
+.recommend_group{
+    margin-bottom: 10px;
+}
+
+.recommend_group i{
+    margin-right: 10px;
     font-size: 25px;
 }
 
-.item_list{
-    width: 101%;
-    overflow: hidden;
+.recommend_group a{
+    font-size: 25px;
+    font-weight: bold;
 }
 
-ul, li{
-    list-style: none;
-    padding: 0;
-    margin-right: 20px;
+.mycards{
+    display: flex;
 }
 
-.item_list li{
-    position: relative;
-    float: left;
-    border: 1px solid #dcdcdc;
-    margin: 0 20px 20px 0;
-    width: 230px;
-    height: 239px;
-    cursor: pointer;
+.card{
+    margin: 10px;
 }
 
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    unicode-bidi: isolate;
-    border-color: inherit;
+.detail_recommend_group{
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.bo_table thead th {
+.detail_recommend_group i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.detail_recommend_group a{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bigbox{
+    display: flex;
+}
+
+.imagebox{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.scholar_table thead th{
     background-color: #f2f2f2;
     border-top: 2px solid #bfbfbf;
     height: 45px;
     font-size: 15px;
+    text-align: center;
 }
 
-.bo_table{
-    margin-top: 20px;
-}
-
-.bo_table .noti .td_subject .title, .bo_table .noti .td_subject .title a {
-    color: #000000;
-    font-weight: 500;
-    cursor: pointer;
+.td_subject{
+    text-align: left;
     font-size: 15px;
 }
 
-.bo_table td .hashtag span {
+.title{
+    color: #2276bc;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.title a{
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.hashtag{
+    padding-left: 30px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.hashtag span{
     display: inline-block;
     background-color: #E6E6E6;
     line-height: 1.25em;
@@ -299,25 +325,37 @@ tr {
     font-size: 13px;
 }
 
-.bo_table tbody td {
-    height: 61px;
+.name{
+    font-size: 15px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #404040;
+    vertical-align: middle;
+    line-height: 1.35em;
+    text-align: center;
 }
 
-.bo_table td.td_day .count {
+.td_day{
+    text-align: center;
+}
+
+.count{
     display: block;
     font-size: 15px;
     font-weight: 600;
-    margin-bottom: 2px;
 }
 
-.bo_table td.td_day .state {
+.state{
     display: inline-block;
+    background-color: skyblue;
     width: 55px;
     height: 21px;
     line-height: 21px;
     font-size: 13px;
     font-weight: 600;
-    color: #fff;
-    text-align: center;
+    color: #000000;
     border-radius: 3px;
+}
+
+.smalltext{
+    text-align: center;
 }
