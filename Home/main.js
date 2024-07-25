@@ -43,5 +43,5 @@ $('.myslider').slick({
 
 
 function redirectToNewPage() {
-    window.location.href = 'index_recommend.html'; // 새로운 페이지 URL로 변경
+    window.location.href = 'index.html'; // 새로운 페이지 URL로 변경
 }
