@@ -232,6 +232,7 @@ body {
 
 .recommend{
     width: 1000px;
+    margin-bottom: 10px;
 }
 
 .recommend_group{
@@ -254,6 +255,10 @@ body {
 
 .card{
     margin: 10px;
+}
+
+.detail_recommend{
+    margin-bottom: 50px;
 }
 
 .detail_recommend_group{
@@ -358,4 +363,60 @@ body {
 
 .smalltext{
     text-align: center;
+}
+
+#ft{
+    border-top: 1px solid #000000;
+}
+
+#ft .foot{
+    position: relative;
+    width: 1030px;
+    margin: 0 auto;
+    padding: 35px 0 40px 0;
+}
+
+#ft address{
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #818181;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+#ft address p span{
+    position: relative;
+    display: inline-block;
+}
+
+#ft address p span:after{
+    content: "|";
+    margin: 0 10px;
+}
+
+#ft .copyright{
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #818181;
+}
+
+#ft .sns{
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+#ft .sns li{
+    float: left;
+    margin-left: 10px;
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+li::marker {
+    content: "";
 }
